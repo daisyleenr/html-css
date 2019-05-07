@@ -1,0 +1,146 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: #28394a;
+  color: #fff;
+}
+
+.modal__description {
+  color: #e94767;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.modal__button-wrapper {
+  align-self: flex-end;
+}
+
+.modal__button {
+  background-color: #e94767;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+
+.camera__wrapper {
+  background-color: #1d585f;
+}
+
+.camera__modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+
+  transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out,
+    left 0.3s ease-in-out;
+}
+
+.camera__overlay:hover ~ .camera__modal {
+  top: 10px;
+  left: 10px;
+  opacity: 1;
+}
+
+.game-center {
+  overflow: hidden;
+}
+
+.game-center__wrapper {
+  background-color: #f8a4a0;
+  box-sizing: border-box;
+
+  transition: height 0.3s ease-in-out;
+}
+
+.game-center__modal {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.game-center__overlay:hover ~ .game-center__wrapper {
+  height: 130px;
+}
+
+.safari {
+  display: flex;
+  justify-content: center;
+}
+.safari__wrapper {
+  background-color: #d6f0f9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  transition: height 0.3s ease-in-out, width 0.3s ease-in-out,
+    top 0.3s ease-in-out;
+}
+
+.safari__modal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.safari-modal__wrapper {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.safari__overlay:hover ~ .safari__wrapper {
+  width: 50%;
+  height: 50%;
+  top: 20px;
+}
