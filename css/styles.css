@@ -3,6 +3,11 @@
 @import "status-bar.css";
 @import "header.css";
 @import "navigation-bar.css";
+@import "friend.css";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: white;
@@ -10,4 +15,10 @@ body {
   color: #020202;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: inherit;
+  color: inherit;
+  text-decoration: none;
 }
