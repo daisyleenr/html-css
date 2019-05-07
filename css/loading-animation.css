@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  width: 100vw;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueBox {
+  background-color: #3dc1d3;
+}
+.redBox {
+  background-color: #e66767;
+}
+
+.circle {
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  margin: 5px;
+  border-radius: 30px;
+}
+
+.firstLoader {
+  display: flex;
+  animation: firstLoader 1.5s ease-out infinite;
+}
+
+@keyframes firstLoader {
+  0% {
+    transform: none;
+  }
+  25%,
+  50% {
+    transform: rotate(180deg);
+  }
+  75%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rect {
+  background-color: #fff;
+  width: 8px;
+  height: 25px;
+  margin: 2px;
+}
+
+.rect:nth-child(1) {
+  animation: secondLoader 2s ease-in-out infinite;
+}
+
+.rect:nth-child(2) {
+  animation: secondLoader 2s ease-in-out 0.1s infinite;
+}
+
+.rect:nth-child(3) {
+  animation: secondLoader 2s ease-in-out 0.2s infinite;
+}
+
+.rect:nth-child(4) {
+  animation: secondLoader 2s ease-in-out 0.3s infinite;
+}
+
+.rect:nth-child(5) {
+  animation: secondLoader 2s ease-in-out 0.4s infinite;
+}
+
+@keyframes secondLoader {
+  0% {
+    transform: none;
+  }
+  5% {
+    transform: scale(1, 2);
+  }
+  20% {
+    transform: none;
+  }
+}
