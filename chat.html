@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">10:23</div>
       <div class="status-bar__column">
@@ -42,7 +42,7 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, January 11, 2019</span>
         <li class="incoming-message message">
@@ -52,21 +52,29 @@
             class="m-avatar message__avatar"
           />
           <div class="message_content">
-            <span class="author">daisyleenr</span>
-            <div class="bubble">How are you?</div>
+            <span class="message__bubble">How are you?</span>
+            <span class="message__author">cony</span>
           </div>
-          <span class="message_timestamp">15:19</span>
+        </li>
+        <li class="sent-message message">
+          <div class="message_content">
+            <span class="message__bubble">Fine. And you?</span>
+          </div>
         </li>
         <li class="incoming-message message">
-          <span class="message_timestamp">15:22</span>
-          <img
-            src="images/avatar.png"
-            alt=""
-            class="g-avatar message__avatar"
-          />
-          <div class="message_content">
-            <span class="author">daisyleenr</span>
-            <div class="bubble">How are you?</div>
+          <img src="images/avatar.png" class="m-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__bubble">
+              Congrats I love you!
+            </span>
+            <span class="message__author">cony</span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__bubble">
+              Thank you see you soon!
+            </span>
           </div>
         </li>
       </ul>
