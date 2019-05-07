@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,800");
+
+body {
+  font-family: Montserrat -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #494949;
+
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  box-sizing: border-box;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + .g-checkbox {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  margin: 1px;
+  margin-right: 5px;
+}
+
+input[type="checkbox"]:checked + .g-checkbox:before {
+  content: "\2714";
+  color: #e75c6c;
+  padding: 1px;
+}
+
+.g-checkbox-label {
+  cursor: pointer;
+}
+
+input[type="submit"],
+button {
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  height: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: #e75c6c;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0rem;
+}
+
+span,
+label {
+  color: #bababa;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0rem;
+}
+
+.header {
+  font-size: 18px;
+  margin: 40px;
+  letter-spacing: 0.05rem;
+}
+
+.sign-in {
+  width: 260px;
+}
+
+.sign-in__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in__form input::placeholder {
+  color: #c4c4c4;
+  font-weight: 500;
+}
+
+.sign-in__link {
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.sign-in__checkbox {
+  display: flex;
+  align-content: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.sing-in__submit {
+  background-color: #e75c6c;
+  color: white;
+}
+
+.sign-in__button--facebook {
+  background-color: #475a95;
+  color: white;
+  width: 125px;
+}
+.sign-in__button--twitter {
+  background-color: #5da1f2;
+  color: white;
+  width: 125px;
+  margin-left: 5px;
+}
+
+.footer {
+  margin-top: 40px;
+  width: 260px;
+}
