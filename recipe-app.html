@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe App</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/recipe-app.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="phone">
+      <header class="header">
+        <div><i class="fas fa-bars"></i></div>
+        <div>
+          <h1>Recipes</h1>
+        </div>
+        <div><i class="fas fa-search"></i></div>
+      </header>
+      <main class="recipes">
+        <section class="recipes__popular-recipes popular-recipes">
+          <header class="popular-recipes__header">
+            <div>
+              <h2>Popular Recipes</h2>
+            </div>
+            <div><a href="#" class="popular-recipes__link">View All</a></div>
+          </header>
+          <div class="popular-recipes__photos">
+            <div class="popular-recipes__photo-wrapper">
+              <div class="popular-recipes__photo">Home Cooking</div>
+              <div class="popular-recipes__photo">Pastry Recipes</div>
+            </div>
+            <div class="popular-recipes__photo-wrapper">
+              <div class="popular-recipes__photo">For Babies</div>
+              <div class="popular-recipes__photo">Smoothie Recipes</div>
+            </div>
+          </div>
+        </section>
+        <section class="recipes__other-recipes other-recipes">
+          <h2>Other Recipes</h2>
+          <ul class="other-recipes__list">
+            <li>
+              <div class="other-recipes__recipe">
+                <div>
+                  <h3>Refreshments</h3>
+                  <span>120 Recipes</span>
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="other-recipes__recipe">
+                <div>
+                  <h3>Diet Dishes</h3>
+                  <span>27 Recipes</span>
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="other-recipes__recipe">
+                <div>
+                  <h3>Soup Recipes</h3>
+                  <span>279 Recipes</span>
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="other-recipes__recipe">
+                <div>
+                  <h3>Meat Dishes</h3>
+                  <span>109 Recipes</span>
+                </div>
+                <div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <nav class="tab-bar">
+        <ul class="tab-bar__list">
+          <li class="tab-bar__tab"><i class="fas fa-home"></i></li>
+          <li class="tab-bar__tab--active">
+            <i class="fas fa-stroopwafel"></i>
+          </li>
+          <li class="tab-bar__tab"><i class="far fa-edit"></i></li>
+          <li class="tab-bar__tab"><i class="far fa-plus-square"></i></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
